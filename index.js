@@ -1,3 +1,5 @@
+var hasOwn = Object.prototype.hasOwnProperty
+
 function isPlainObject(obj) {
 	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval)
 		return false;
@@ -34,12 +36,6 @@ module.exports = function () {
 	// Handle case when target is a string or something (possible in deep copy)
 	if ( typeof target !== "object" && typeof target !== "function") {
 		target = {};
-	}
-
-	// extend jQuery itself if only one argument is passed
-	if ( length === i ) {
-		target = this;
-		--i;
 	}
 
 	for ( ; i < length; i++ ) {
