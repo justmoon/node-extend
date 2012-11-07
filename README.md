@@ -40,4 +40,4 @@ More objects to merge into the first.
 
 All credit to the jQuery authors for perfecting this amazing utility.
 
-Ported to Node.js by [Stefan Thomas](https://github.com/justmoon) with contributions by [Jonathan Buchanan](https://github.com/insin)
+Ported to Node.js by [Stefan Thomas](https://github.com/justmoon) with contributions by [Jonathan Buchanan](https://github.com/insin).
