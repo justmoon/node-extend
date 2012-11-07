@@ -1,4 +1,4 @@
-var hasOwn = Object.prototype.hasOwnProperty
+var hasOwn = Object.prototype.hasOwnProperty;
 
 function isPlainObject(obj) {
 	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval)
