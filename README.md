@@ -2,6 +2,14 @@
 
 `node-extend` is a port of the classic extend() method from jQuery. It behaves as you expect. It is simple, tried and true.
 
+## Installation
+
+This package is available on [NPM](https://npmjs.org/) as `extend`.
+
+``` sh
+npm install extend
+```
+
 ## Usage
 
 **Syntax:** jQuery.extend **(** [`deep`], `target`, `object1`, [`objectN`] **)** 
