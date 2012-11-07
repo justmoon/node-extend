@@ -4,7 +4,7 @@
 
 ## Installation
 
-This package is available on [NPM](https://npmjs.org/) as `extend`.
+This package is available on [NPM](https://npmjs.org/) as: `extend`
 
 ``` sh
 npm install extend
