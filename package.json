@@ -14,5 +14,9 @@
 	"repository" : {
 		"type" : "git",
 		"url" : "https://github.com/justmoon/node-extend.git"
-	}
+	},
+
+  "devDependencies" : {
+    "buster" : "*"
+  }
 }
