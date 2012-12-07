@@ -12,7 +12,7 @@ npm install extend
 
 ## Usage
 
-**Syntax:** jQuery.extend **(** [`deep`], `target`, `object1`, [`objectN`] **)** 
+**Syntax:** extend **(** [`deep`], `target`, `object1`, [`objectN`] **)** 
 
 *Extend one object with one or more others, returning the modified object.*
 
