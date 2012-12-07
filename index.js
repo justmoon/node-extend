@@ -18,7 +18,7 @@ function isPlainObject(obj) {
 	return key === undefined || hasOwn.call( obj, key );
 };
 
-module.exports = function () {
+module.exports = function extend() {
 	var options, name, src, copy, copyIsArray, clone,
 	    target = arguments[0] || {},
 	    i = 1,
