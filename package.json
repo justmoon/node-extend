@@ -1,6 +1,6 @@
 {
 	"name": "extend",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Port of jQuery.extend for Node.js",
 	"main": "./index",
 	"keywords": [
