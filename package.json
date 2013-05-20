@@ -19,7 +19,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"buster": "*"
+		"tape" : "~1.0.4"
 	}
 }
 
