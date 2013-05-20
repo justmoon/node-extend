@@ -1,3 +1,5 @@
+[![Build Status][1]][2]
+
 # extend() for Node.js
 
 `node-extend` is a port of the classic extend() method from jQuery. It behaves as you expect. It is simple, tried and true.
@@ -41,3 +43,7 @@ More objects to merge into the first.
 All credit to the jQuery authors for perfecting this amazing utility.
 
 Ported to Node.js by [Stefan Thomas](https://github.com/justmoon) with contributions by [Jonathan Buchanan](https://github.com/insin).
+
+[1]: https://travis-ci.org/justmoon/node-extend.png
+[2]: https://travis-ci.org/justmoon/node-extend
+
