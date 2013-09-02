@@ -5,7 +5,7 @@
 	"description": "Port of jQuery.extend for Node.js",
 	"main": "index",
 	"scripts": {
-		"test": "node test/extend-test.js"
+		"test": "node test/index.js"
 	},
 	"keywords": [
 		"extend",
@@ -19,7 +19,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"buster": "*"
+		"tape" : "~1.0.4"
 	}
 }
 
