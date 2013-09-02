@@ -7,6 +7,12 @@
 	"scripts": {
 		"test": "node test/index.js"
 	},
+	"contributors": [
+		{
+			"name": "Jordan Harband",
+			"url": "https://github.com/ljharb"
+		}
+	],
 	"keywords": [
 		"extend",
 		"clone",
