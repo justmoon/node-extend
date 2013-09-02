@@ -1,4 +1,4 @@
-[![Build Status][1]][2]
+[![Build Status][1]][2] [![dependency status][9]][10] [![dev dependency status][11]][12]
 
 # extend() for Node.js <sup>[![Version Badge][8]][3]</sup>
 
@@ -52,4 +52,8 @@ Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan
 [6]: https://github.com/insin
 [7]: https://github.com/ljharb
 [8]: http://vb.teelaun.ch/justmoon/node-extend.svg
+[9]: https://david-dm.org/justmoon/node-extend.png
+[10]: https://david-dm.org/justmoon/node-extend
+[11]: https://david-dm.org/justmoon/node-extend/dev-status.png
+[12]: https://david-dm.org/justmoon/node-extend#info=devDependencies
 
