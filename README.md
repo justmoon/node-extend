@@ -6,7 +6,7 @@
 
 ## Installation
 
-This package is available on [NPM](https://npmjs.org/) as: `extend`
+This package is available on [npm][3] as: `extend`
 
 ``` sh
 npm install extend
@@ -36,14 +36,19 @@ More objects to merge into the first.
 
 ## License
 
-`node-extend` is licensed under the [MIT License](http://opensource.org/licenses/MIT).
+`node-extend` is licensed under the [MIT License][4].
 
 ## Acknowledgements
 
 All credit to the jQuery authors for perfecting this amazing utility.
 
-Ported to Node.js by [Stefan Thomas](https://github.com/justmoon) with contributions by [Jonathan Buchanan](https://github.com/insin).
+Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan][6] and [Jordan Harband][7].
 
 [1]: https://travis-ci.org/justmoon/node-extend.png
 [2]: https://travis-ci.org/justmoon/node-extend
+[3]: https://npmjs.org/package/extend
+[4]: http://opensource.org/licenses/MIT
+[5]: https://github.com/justmoon
+[6]: https://github.com/insin
+[7]: https://github.com/ljharb
 
