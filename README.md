@@ -1,6 +1,6 @@
 [![Build Status][1]][2]
 
-# extend() for Node.js
+# extend() for Node.js <sup>[![Version Badge][8]][3]</sup>
 
 `node-extend` is a port of the classic extend() method from jQuery. It behaves as you expect. It is simple, tried and true.
 
@@ -51,4 +51,5 @@ Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan
 [5]: https://github.com/justmoon
 [6]: https://github.com/insin
 [7]: https://github.com/ljharb
+[8]: http://vb.teelaun.ch/justmoon/node-extend.svg
 
