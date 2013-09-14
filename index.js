@@ -5,8 +5,8 @@ function isPlainObject(obj) {
 	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval)
 		return false;
 
-	var has_own_constructor = hasOwnProperty.call(obj, 'constructor');
-	var has_is_property_of_method = hasOwnProperty.call(obj.constructor.prototype, 'isPrototypeOf');
+	var has_own_constructor = hasOwn.call(obj, 'constructor');
+	var has_is_property_of_method = hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
 	// Not own constructor property must be Object
 	if (obj.constructor && !has_own_constructor && !has_is_property_of_method)
 		return false;
