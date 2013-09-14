@@ -535,3 +535,20 @@ test('deep clone', function (t) {
   t.end();
 });
 
+test('deep clone; arrays are merged', function (t) {
+  var defaults = {
+    arr: [1, 2, 3]
+  };
+  var override = {
+    arr: ["x"]
+  };
+  var expectedTarget = {
+    arr: ["x", 2, 3]
+  };
+
+  var target = extend(true, defaults, override);
+
+  t.deepEqual(target, expectedTarget, 'arrays are merged');
+  t.end();
+});
+
