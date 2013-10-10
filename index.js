@@ -93,7 +93,7 @@
 
 		// Return the modified object
 		return target;
-	}
+	};
 
 	return extend;
 });
