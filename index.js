@@ -12,7 +12,7 @@
     // Browser globals (root is window)
     root.extend = factory();
   }
-})(this, function () {
+}(this, function () {
 		
 	'use strict';
 
@@ -96,4 +96,4 @@
 	};
 
 	return extend;
-});
+}));
