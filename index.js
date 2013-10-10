@@ -1,3 +1,21 @@
+(function (root, factory) { //UMD: https://github.com/umdjs/umd
+	'use strict';
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(factory);
+  } else if (typeof exports === 'object') {
+    // Node. Does not work with strict CommonJS, but
+    // only CommonJS-like enviroments that support module.exports,
+    // like Node.
+    module.exports = factory();
+  } else {
+    // Browser globals (root is window)
+    root.extend = factory();
+  }
+})(this, function () {
+	
+'use strict';
+
 var hasOwn = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
 
@@ -17,14 +35,14 @@ function isPlainObject(obj) {
 	for ( key in obj ) {}
 
 	return key === undefined || hasOwn.call( obj, key );
-};
+}
 
-module.exports = function extend() {
+function extend() {
 	var options, name, src, copy, copyIsArray, clone,
-	    target = arguments[0] || {},
-	    i = 1,
-	    length = arguments.length,
-	    deep = false;
+			target = arguments[0] || {},
+			i = 1,
+			length = arguments.length,
+			deep = false;
 
 	// Handle a deep copy situation
 	if ( typeof target === "boolean" ) {
@@ -41,7 +59,7 @@ module.exports = function extend() {
 
 	for ( ; i < length; i++ ) {
 		// Only deal with non-null/undefined values
-		if ( (options = arguments[ i ]) != null ) {
+		if ( (options = arguments[ i ]) !== null ) {
 			// Extend the base object
 			for ( name in options ) {
 				src = target[ name ];
@@ -75,4 +93,7 @@ module.exports = function extend() {
 
 	// Return the modified object
 	return target;
-};
+}
+
+return extend;
+});
