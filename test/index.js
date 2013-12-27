@@ -161,7 +161,7 @@ test('merge number with object', function (t) {
   var testObj = {
     str: 'me a test',
     int: 10,
-    arr: [ 1, 'what', new Date(81, 8, 4)],
+    arr: [1, 'what', new Date(81, 8, 4)],
     date: new Date(81, 4, 13)
   };
 
