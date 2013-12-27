@@ -3,6 +3,7 @@ var toString = Object.prototype.toString;
 var undefined;
 
 var isPlainObject = function isPlainObject(obj) {
+	"use strict";
 	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval) {
 		return false;
 	}
@@ -22,6 +23,7 @@ var isPlainObject = function isPlainObject(obj) {
 };
 
 module.exports = function extend() {
+	"use strict";
 	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[0] || {},
 		i = 1,
