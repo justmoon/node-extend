@@ -1,7 +1,7 @@
 var hasOwn = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
 
-function isPlainObject(obj) {
+var isPlainObject = function isPlainObject(obj) {
 	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval)
 		return false;
 
