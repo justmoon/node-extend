@@ -21,10 +21,10 @@ var isPlainObject = function isPlainObject(obj) {
 
 module.exports = function extend() {
 	var options, name, src, copy, copyIsArray, clone,
-	    target = arguments[0] || {},
-	    i = 1,
-	    length = arguments.length,
-	    deep = false;
+		target = arguments[0] || {},
+		i = 1,
+		length = arguments.length,
+		deep = false;
 
 	// Handle a deep copy situation
 	if (typeof target === "boolean") {
