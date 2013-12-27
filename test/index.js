@@ -29,6 +29,14 @@ var deep = {
   }
 };
 
+test('missing arguments', function (t) {
+  t.deepEqual(extend(undefined, { a: 1 }), { a: 1 }, 'missing first argument is second argument');
+  t.deepEqual(extend({ a: 1 }), { a: 1 }, 'missing second argument is first argument');
+  t.deepEqual(extend(true, undefined, { a: 1 }), { a: 1 }, 'deep: missing first argument is second argument');
+  t.deepEqual(extend(true, { a: 1 }), { a: 1 }, 'deep: missing second argument is first argument');
+  t.deepEqual(extend(), {}, 'no arguments is object');
+  t.end();
+});
 
 test('merge string with string', function (t) {
   var ori = 'what u gonna say';
