@@ -3,8 +3,9 @@ var toString = Object.prototype.toString;
 var undefined;
 
 var isPlainObject = function isPlainObject(obj) {
-	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval)
+	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval) {
 		return false;
+	}
 
 	var has_own_constructor = hasOwn.call(obj, 'constructor');
 	var has_is_property_of_method = hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
