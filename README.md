@@ -22,6 +22,7 @@ Keep in mind that the target object will be modified, and will be returned from 
 
 If a boolean true is specified as the first argument, extend performs a deep copy, recursively copying any objects it finds. Otherwise, the copy will share structure with the original object(s).
 Undefined properties are not copied. However, properties inherited from the object's prototype will be copied over.
+Warning: passing `false` as the first argument is not supported.
 
 ### Arguments
 
