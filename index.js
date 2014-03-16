@@ -9,10 +9,11 @@ var isPlainObject = function isPlainObject(obj) {
 	}
 
 	var has_own_constructor = hasOwn.call(obj, 'constructor');
-	var has_is_property_of_method = hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
+	var has_is_property_of_method = obj.constructor && obj.constructor.prototype &&  hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
 	// Not own constructor property must be Object
-	if (obj.constructor && !has_own_constructor && !has_is_property_of_method)
+	if (obj.constructor && !has_own_constructor && !has_is_property_of_method) {
 		return false;
+	}
 
 	// Own properties are enumerated firstly, so to speed up,
 	// if last one is own, then all properties are own.
