@@ -10,7 +10,9 @@ var obj = {
 	str: str,
 	int: int,
 	arr: arr,
-	date: date
+	date: date,
+	constructor: 'fake',
+	isPrototypeOf: 'not a function'
 };
 
 var deep = {
@@ -103,7 +105,9 @@ test('merge string with obj', function (t) {
 		str: 'me a test',
 		int: 10,
 		arr: [1, 'what', new Date(81, 8, 4)],
-		date: new Date(81, 4, 13)
+		date: new Date(81, 4, 13),
+		constructor: 'fake',
+		isPrototypeOf: 'not a function'
 	};
 	t.deepEqual(obj, testObj, 'original obj is unchanged');
 	t.deepEqual(target, testObj, 'string + obj is obj');
@@ -162,7 +166,9 @@ test('merge number with object', function (t) {
 		str: 'me a test',
 		int: 10,
 		arr: [1, 'what', new Date(81, 8, 4)],
-		date: new Date(81, 4, 13)
+		date: new Date(81, 4, 13),
+		constructor: 'fake',
+		isPrototypeOf: 'not a function'
 	};
 
 	t.deepEqual(obj, testObj, 'obj is unchanged');
@@ -230,7 +236,9 @@ test('merge array with object', function (t) {
 		str: 'me a test',
 		int: 10,
 		arr: [1, 'what', new Date(81, 8, 4)],
-		date: new Date(81, 4, 13)
+		date: new Date(81, 4, 13),
+		constructor: 'fake',
+		isPrototypeOf: 'not a function'
 	};
 
 	t.deepEqual(obj, testObject, 'obj is unchanged');
@@ -307,7 +315,9 @@ test('merge date with object', function (t) {
 		str: 'me a test',
 		int: 10,
 		arr: [1, 'what', testDate],
-		date: new Date(81, 4, 13)
+		date: new Date(81, 4, 13),
+		constructor: 'fake',
+		isPrototypeOf: 'not a function'
 	};
 
 	t.deepEqual(obj, testObject, 'original object is unchanged');
@@ -424,14 +434,18 @@ test('merge object with object', function (t) {
 		str: 'me a test',
 		int: 10,
 		arr: [1, 'what', new Date(81, 8, 4)],
-		date: new Date(81, 4, 13)
+		date: new Date(81, 4, 13),
+		constructor: 'fake',
+		isPrototypeOf: 'not a function'
 	};
 	var expectedTarget = {
 		str: 'me a test',
 		int: 10,
 		arr: [1, 'what', new Date(81, 8, 4)],
 		date: new Date(81, 4, 13),
-		foo: 'bar'
+		foo: 'bar',
+		constructor: 'fake',
+		isPrototypeOf: 'not a function'
 	};
 
 	t.deepEqual(obj, expectedObj, 'obj is unchanged');
@@ -458,7 +472,9 @@ test('deep clone', function (t) {
 			str: 'me a test',
 			int: 10,
 			arr: [1, 'what', new Date(81, 8, 4)],
-			date: new Date(81, 4, 13)
+			date: new Date(81, 4, 13),
+			constructor: 'fake',
+			isPrototypeOf: 'not a function'
 		},
 		layer: {
 			int: 10,
@@ -478,7 +494,9 @@ test('deep clone', function (t) {
 			str: 'me a test',
 			int: 10,
 			arr: [1, 'what', new Date(81, 8, 4)],
-			date: new Date(81, 4, 13)
+			date: new Date(81, 4, 13),
+			constructor: 'fake',
+			isPrototypeOf: 'not a function'
 		},
 		layer: {
 			int: 10,
@@ -502,7 +520,9 @@ test('deep clone', function (t) {
 			str: 'me a test',
 			int: 10,
 			arr: [1, 'what', new Date(81, 8, 4)],
-			date: new Date(81, 4, 13)
+			date: new Date(81, 4, 13),
+			constructor: 'fake',
+			isPrototypeOf: 'not a function'
 		},
 		layer: {
 			int: 10,
@@ -524,7 +544,9 @@ test('deep clone', function (t) {
 			str: 'me a test',
 			int: 10,
 			arr: [1, 'what', new Date(81, 8, 4)],
-			date: new Date(81, 4, 13)
+			date: new Date(81, 4, 13),
+			constructor: 'fake',
+			isPrototypeOf: 'not a function'
 		},
 		layer: {
 			int: 10,
