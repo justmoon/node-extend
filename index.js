@@ -25,14 +25,20 @@ var isPlainObject = function isPlainObject(obj) {
 
 module.exports = function extend() {
 	"use strict";
-	var options, name, src, copy, copyIsArray, clone,
-		target = arguments[0] || {},
+	var options, name, src, copy, copyIsArray, clone, target,
 		i = 1,
 		length = arguments.length,
 		deep = false;
+  
+  // Handle when a false is passed in for deep attribute
+  if (typeof arguments[0] === "boolean") {
+    target = arguments[0];
+  } else {
+    target = arguments[0] || {};
+  }
 
 	// Handle a deep copy situation
-	if (typeof target === "boolean" && target == true) {
+	if (typeof target === "boolean") {
 		deep = target;
 		target = arguments[1] || {};
 		// skip the boolean and the target
