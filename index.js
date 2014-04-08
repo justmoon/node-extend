@@ -32,7 +32,7 @@ module.exports = function extend() {
 		deep = false;
 
 	// Handle a deep copy situation
-	if (typeof target === "boolean") {
+	if (typeof target === "boolean" && target == true) {
 		deep = target;
 		target = arguments[1] || {};
 		// skip the boolean and the target
