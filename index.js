@@ -25,7 +25,7 @@ var isPlainObject = function isPlainObject(obj) {
 
 module.exports = function extend() {
 	"use strict";
-	var options, name, src, copy, copyIsArray, clone, target,
+	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[0],
 		i = 1,
 		length = arguments.length,
