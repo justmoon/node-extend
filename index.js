@@ -31,10 +31,10 @@ module.exports = function extend() {
 		length = arguments.length,
 		deep = false;
   
-  // handle case where default is needed
-  if (!target && typeof target != "boolean") {
-    target = {}
-  }
+	// handle case where first argument is not a valid object
+	if (!target && typeof target != "boolean") {
+		target = {};
+	}
 
 	// Handle a deep copy situation
 	if (typeof target === "boolean") {
