@@ -582,3 +582,23 @@ test('deep clone; arrays are merged', function (t) {
 	t.end();
 });
 
+test('deep clone === false; objects merged normally', function (t) {
+	var defaults = {
+		a: 1
+	};
+	var override = {
+		a: 2
+	};
+	var target = extend(false, defaults, override);
+	t.deepEqual(target, override, 'deep === false handled normally');
+	t.end();
+});
+
+test('pass in null; should create a valid object', function (t) {
+	var override = {
+		a: 1
+	};
+	var target = extend(null, override);
+	t.deepEqual(target, override, 'null object handled normally');
+	t.end();
+});
