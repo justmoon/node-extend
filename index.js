@@ -31,23 +31,15 @@ module.exports = function extend() {
 		length = arguments.length,
 		deep = false;
   
-	// handle case where first argument is not a valid object
-	if (!target && typeof target != "boolean") {
-		target = {};
-	}
-
 	// Handle a deep copy situation
 	if (typeof target === "boolean") {
 		deep = target;
 		target = arguments[1] || {};
 		// skip the boolean and the target
 		i = 2;
-	}
-
-	// Handle case when target is a string or something (possible in deep copy)
-	if (typeof target !== "object" && typeof target !== "function") {
-		target = {};
-	}
+	} else if (typeof target !== "object" && typeof target !== "function" || target == undefined) {
+    target = {};
+  }
 
 	for (; i < length; ++i) {
 		// Only deal with non-null/undefined values
