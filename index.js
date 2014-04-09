@@ -9,7 +9,7 @@ var isPlainObject = function isPlainObject(obj) {
 	}
 
 	var has_own_constructor = hasOwn.call(obj, 'constructor');
-	var has_is_property_of_method = obj.constructor && obj.constructor.prototype &&  hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
+	var has_is_property_of_method = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
 	// Not own constructor property must be Object
 	if (obj.constructor && !has_own_constructor && !has_is_property_of_method) {
 		return false;
@@ -30,7 +30,7 @@ module.exports = function extend() {
 		i = 1,
 		length = arguments.length,
 		deep = false;
-  
+
 	// Handle a deep copy situation
 	if (typeof target === "boolean") {
 		deep = target;
@@ -38,7 +38,7 @@ module.exports = function extend() {
 		// skip the boolean and the target
 		i = 2;
 	} else if (typeof target !== "object" && typeof target !== "function" || target == undefined) {
-    		target = {};
+			target = {};
 	}
 
 	for (; i < length; ++i) {
