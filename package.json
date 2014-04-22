@@ -28,7 +28,7 @@
 	},
 	"devDependencies": {
 		"tape" : "~2.12.3",
-		"covert": "~0.3.1"
+		"covert": "~0.4.0"
 	}
 }
 
