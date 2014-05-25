@@ -45,7 +45,7 @@ All credit to the jQuery authors for perfecting this amazing utility.
 
 Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan][6] and [Jordan Harband][7].
 
-[1]: https://travis-ci.org/justmoon/node-extend.png
+[1]: https://travis-ci.org/justmoon/node-extend.svg
 [2]: https://travis-ci.org/justmoon/node-extend
 [3]: https://npmjs.org/package/extend
 [4]: http://opensource.org/licenses/MIT
@@ -53,8 +53,8 @@ Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan
 [6]: https://github.com/insin
 [7]: https://github.com/ljharb
 [8]: http://vb.teelaun.ch/justmoon/node-extend.svg
-[9]: https://david-dm.org/justmoon/node-extend.png
+[9]: https://david-dm.org/justmoon/node-extend.svg
 [10]: https://david-dm.org/justmoon/node-extend
-[11]: https://david-dm.org/justmoon/node-extend/dev-status.png
+[11]: https://david-dm.org/justmoon/node-extend/dev-status.svg
 [12]: https://david-dm.org/justmoon/node-extend#info=devDependencies
 
