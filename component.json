@@ -2,17 +2,18 @@
 	"name": "extend",
 	"author": "Stefan Thomas <justmoon@members.fsf.org> (http://www.justmoon.net)",
 	"version": "1.2.2",
-	"description": "Port of jQuery.extend for Node.js",
-	"main": "index",
-	"scripts": {
-		"test": "node test/index.js",
-		"coverage": "covert test/index.js",
-		"coverage-quiet": "covert test/index.js --quiet"
-	},
+	"description": "Port of jQuery.extend for Node.js/browser.",
+	"scripts": [
+		"index.js"
+	],
 	"contributors": [
 		{
 			"name": "Jordan Harband",
 			"url": "https://github.com/ljharb"
+		},
+		{
+			"name": "Andy Burke",
+			"url": "https://github.com/andyburke"
 		}
 	],
 	"keywords": [
