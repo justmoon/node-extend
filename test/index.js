@@ -44,15 +44,15 @@ test('merge string with string', function (t) {
 	var ori = 'what u gonna say';
 	var target = extend(ori, str);
 	var expectedTarget = {
-		'0': 'm',
-		'1': 'e',
-		'2': ' ',
-		'3': 'a',
-		'4': ' ',
-		'5': 't',
-		'6': 'e',
-		'7': 's',
-		'8': 't'
+		0: 'm',
+		1: 'e',
+		2: ' ',
+		3: 'a',
+		4: ' ',
+		5: 't',
+		6: 'e',
+		7: 's',
+		8: 't'
 	};
 
 	t.equal(ori, 'what u gonna say', 'original string 1 is unchanged');
@@ -78,9 +78,9 @@ test('merge string with array', function (t) {
 	t.equal(ori, 'what u gonna say', 'original string is unchanged');
 	t.deepEqual(arr, [1, 'what', new Date(81, 8, 4)], 'array is unchanged');
 	t.deepEqual(target, {
-		'0' : 1,
-		'1' : 'what',
-		'2' : new Date(81, 8, 4)
+		0: 1,
+		1: 'what',
+		2: new Date(81, 8, 4)
 	}, 'string + array is array');
 	t.end();
 });
@@ -121,15 +121,15 @@ test('merge number with string', function (t) {
 	t.equal(ori, 20, 'number is unchanged');
 	t.equal(str, 'me a test', 'string is unchanged');
 	t.deepEqual(target, {
-		'0': 'm',
-		'1': 'e',
-		'2': ' ',
-		'3': 'a',
-		'4': ' ',
-		'5': 't',
-		'6': 'e',
-		'7': 's',
-		'8': 't'
+		0: 'm',
+		1: 'e',
+		2: ' ',
+		3: 'a',
+		4: ' ',
+		5: 't',
+		6: 'e',
+		7: 's',
+		8: 't'
 	}, 'number + string is object form of string');
 	t.end();
 });
@@ -144,9 +144,9 @@ test('merge number with array', function (t) {
 
 	t.deepEqual(arr, [1, 'what', new Date(81, 8, 4)], 'array is unchanged');
 	t.deepEqual(target, {
-		'0': 1,
-		'1': 'what',
-		'2': new Date(81, 8, 4)
+		0: 1,
+		1: 'what',
+		2: new Date(81, 8, 4)
 	}, 'number + arr is object with array contents');
 	t.end();
 });
@@ -183,15 +183,15 @@ test('merge array with string', function (t) {
 	t.deepEqual(ori, str.split(''), 'array is changed to be an array of string chars');
 	t.equal(str, 'me a test', 'string is unchanged');
 	t.deepEqual(target, {
-		'0': 'm',
-		'1': 'e',
-		'2': ' ',
-		'3': 'a',
-		'4': ' ',
-		'5': 't',
-		'6': 'e',
-		'7': 's',
-		'8': 't'
+		0: 'm',
+		1: 'e',
+		2: ' ',
+		3: 'a',
+		4: ' ',
+		5: 't',
+		6: 'e',
+		7: 's',
+		8: 't'
 	}, 'array + string is object form of string');
 	t.end();
 });
@@ -260,15 +260,15 @@ test('merge date with string', function (t) {
 	var ori = new Date(81, 9, 20);
 	var target = extend(ori, str);
 	var testObject = {
-		'0': 'm',
-		'1': 'e',
-		'2': ' ',
-		'3': 'a',
-		'4': ' ',
-		'5': 't',
-		'6': 'e',
-		'7': 's',
-		'8': 't'
+		0: 'm',
+		1: 'e',
+		2: ' ',
+		3: 'a',
+		4: ' ',
+		5: 't',
+		6: 'e',
+		7: 's',
+		8: 't'
 	};
 
 	t.deepEqual(ori, testObject, 'date is changed to object form of string');
@@ -336,15 +336,15 @@ test('merge object with string', function (t) {
 	};
 	var target = extend(ori, str);
 	var testObj = {
-		'0': 'm',
-		'1': 'e',
-		'2': ' ',
-		'3': 'a',
-		'4': ' ',
-		'5': 't',
-		'6': 'e',
-		'7': 's',
-		'8': 't',
+		0: 'm',
+		1: 'e',
+		2: ' ',
+		3: 'a',
+		4: ' ',
+		5: 't',
+		6: 'e',
+		7: 's',
+		8: 't',
 		str: 'no shit',
 		int: 76,
 		arr: [1, 2, 3, 4],
@@ -385,9 +385,9 @@ test('merge object with array', function (t) {
 	};
 	var target = extend(ori, arr);
 	var testObject = {
-		'0': 1,
-		'1': 'what',
-		'2': new Date(81, 8, 4),
+		0: 1,
+		1: 'what',
+		2: new Date(81, 8, 4),
 		str: 'no shit',
 		int: 76,
 		arr: [1, 2, 3, 4],
