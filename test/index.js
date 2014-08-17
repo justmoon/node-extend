@@ -459,7 +459,12 @@ test('deep clone', function (t) {
 		str: 'no shit',
 		int: 76,
 		arr: [1, 2, 3, 4],
-		date: new Date(81, 7, 26)
+		date: new Date(81, 7, 26),
+		layer: {
+			deep: {
+				int: 42
+			}
+		}
 	};
 	var target = extend(true, ori, deep);
 
