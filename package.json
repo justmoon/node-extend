@@ -21,16 +21,15 @@
 		"clone",
 		"merge"
 	],
-	"repository" : {
+	"repository": {
 		"type": "git",
 		"url": "https://github.com/justmoon/node-extend.git"
 	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"tape" : "~2.14.0",
+		"tape": "~2.14.0",
 		"covert": "~1.0.0",
-		"jscs": "~1.5.9"
+		"jscs": "~1.6.0"
 	}
 }
 
