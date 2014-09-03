@@ -29,7 +29,7 @@
 	"devDependencies": {
 		"tape": "~2.14.0",
 		"covert": "~1.0.0",
-		"jscs": "~1.6.0"
+		"jscs": "~1.6.1"
 	}
 }
 
