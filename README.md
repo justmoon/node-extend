@@ -39,7 +39,7 @@ More objects to merge into the first.
 
 ## License
 
-`node-extend` is licensed under the [MIT License][4].
+`node-extend` is licensed under the [MIT License][mit-license-url].
 
 ## Acknowledgements
 
@@ -50,7 +50,7 @@ Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan
 [travis-svg]: https://travis-ci.org/justmoon/node-extend.svg
 [travis-url]: https://travis-ci.org/justmoon/node-extend
 [npm-url]: https://npmjs.org/package/extend
-[4]: http://opensource.org/licenses/MIT
+[mit-license-url]: http://opensource.org/licenses/MIT
 [5]: https://github.com/justmoon
 [6]: https://github.com/insin
 [7]: https://github.com/ljharb
