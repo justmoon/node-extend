@@ -1,4 +1,6 @@
-[![Build Status][1]][2] [![dependency status][9]][10] [![dev dependency status][11]][12]
+[![Build Status][travis-svg]][travis-url]
+[![dependency status][9]][10]
+[![dev dependency status][11]][12]
 
 # extend() for Node.js <sup>[![Version Badge][8]][3]</sup>
 
@@ -45,8 +47,8 @@ All credit to the jQuery authors for perfecting this amazing utility.
 
 Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan][6] and [Jordan Harband][7].
 
-[1]: https://travis-ci.org/justmoon/node-extend.svg
-[2]: https://travis-ci.org/justmoon/node-extend
+[travis-svg]: https://travis-ci.org/justmoon/node-extend.svg
+[travis-url]: https://travis-ci.org/justmoon/node-extend
 [3]: https://npmjs.org/package/extend
 [4]: http://opensource.org/licenses/MIT
 [5]: https://github.com/justmoon
