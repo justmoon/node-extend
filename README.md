@@ -1,6 +1,6 @@
 [![Build Status][travis-svg]][travis-url]
-[![dependency status][9]][10]
-[![dev dependency status][11]][12]
+[![dependency status][deps-svg]][deps-url]
+[![dev dependency status][dev-deps-svg]][dev-deps-url]
 
 # extend() for Node.js <sup>[![Version Badge][npm-version-png]][npm-url]</sup>
 
@@ -55,8 +55,8 @@ Ported to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jon
 [github-insin]: https://github.com/insin
 [github-ljharb]: https://github.com/ljharb
 [npm-version-png]: http://vb.teelaun.ch/justmoon/node-extend.svg
-[9]: https://david-dm.org/justmoon/node-extend.svg
-[10]: https://david-dm.org/justmoon/node-extend
-[11]: https://david-dm.org/justmoon/node-extend/dev-status.svg
-[12]: https://david-dm.org/justmoon/node-extend#info=devDependencies
+[deps-svg]: https://david-dm.org/justmoon/node-extend.svg
+[deps-url]: https://david-dm.org/justmoon/node-extend
+[dev-deps-svg]: https://david-dm.org/justmoon/node-extend/dev-status.svg
+[dev-deps-url]: https://david-dm.org/justmoon/node-extend#info=devDependencies
 
