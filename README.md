@@ -45,15 +45,15 @@ More objects to merge into the first.
 
 All credit to the jQuery authors for perfecting this amazing utility.
 
-Ported to Node.js by [Stefan Thomas][5] with contributions by [Jonathan Buchanan][6] and [Jordan Harband][7].
+Ported to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jonathan Buchanan][github-insin] and [Jordan Harband][github-ljharb].
 
 [travis-svg]: https://travis-ci.org/justmoon/node-extend.svg
 [travis-url]: https://travis-ci.org/justmoon/node-extend
 [npm-url]: https://npmjs.org/package/extend
 [mit-license-url]: http://opensource.org/licenses/MIT
-[5]: https://github.com/justmoon
-[6]: https://github.com/insin
-[7]: https://github.com/ljharb
+[github-justmoon]: https://github.com/justmoon
+[github-insin]: https://github.com/insin
+[github-ljharb]: https://github.com/ljharb
 [8]: http://vb.teelaun.ch/justmoon/node-extend.svg
 [9]: https://david-dm.org/justmoon/node-extend.svg
 [10]: https://david-dm.org/justmoon/node-extend
