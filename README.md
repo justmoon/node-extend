@@ -2,7 +2,7 @@
 [![dependency status][9]][10]
 [![dev dependency status][11]][12]
 
-# extend() for Node.js <sup>[![Version Badge][8]][npm-url]</sup>
+# extend() for Node.js <sup>[![Version Badge][npm-version-png]][npm-url]</sup>
 
 `node-extend` is a port of the classic extend() method from jQuery. It behaves as you expect. It is simple, tried and true.
 
@@ -54,7 +54,7 @@ Ported to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jon
 [github-justmoon]: https://github.com/justmoon
 [github-insin]: https://github.com/insin
 [github-ljharb]: https://github.com/ljharb
-[8]: http://vb.teelaun.ch/justmoon/node-extend.svg
+[npm-version-png]: http://vb.teelaun.ch/justmoon/node-extend.svg
 [9]: https://david-dm.org/justmoon/node-extend.svg
 [10]: https://david-dm.org/justmoon/node-extend
 [11]: https://david-dm.org/justmoon/node-extend/dev-status.svg
