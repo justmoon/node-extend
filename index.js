@@ -37,7 +37,7 @@ module.exports = function extend() {
 		target = arguments[1] || {};
 		// skip the boolean and the target
 		i = 2;
-	} else if (typeof target !== 'object' && typeof target !== 'function' || target == undefined) {
+	} else if ((typeof target !== 'object' && typeof target !== 'function') || target == null) {
 			target = {};
 	}
 
