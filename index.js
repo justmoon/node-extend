@@ -3,7 +3,7 @@ var toString = Object.prototype.toString;
 var undefined;
 
 var isPlainObject = function isPlainObject(obj) {
-	"use strict";
+	'use strict';
 	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval) {
 		return false;
 	}
@@ -24,7 +24,7 @@ var isPlainObject = function isPlainObject(obj) {
 };
 
 module.exports = function extend() {
-	"use strict";
+	'use strict';
 	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[0],
 		i = 1,
@@ -32,12 +32,12 @@ module.exports = function extend() {
 		deep = false;
 
 	// Handle a deep copy situation
-	if (typeof target === "boolean") {
+	if (typeof target === 'boolean') {
 		deep = target;
 		target = arguments[1] || {};
 		// skip the boolean and the target
 		i = 2;
-	} else if (typeof target !== "object" && typeof target !== "function" || target == undefined) {
+	} else if (typeof target !== 'object' && typeof target !== 'function' || target == undefined) {
 			target = {};
 	}
 

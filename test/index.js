@@ -575,10 +575,10 @@ test('deep clone; arrays are merged', function (t) {
 		arr: [1, 2, 3]
 	};
 	var override = {
-		arr: ["x"]
+		arr: ['x']
 	};
 	var expectedTarget = {
-		arr: ["x", 2, 3]
+		arr: ['x', 2, 3]
 	};
 
 	var target = extend(true, defaults, override);
