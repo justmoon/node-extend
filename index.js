@@ -42,8 +42,9 @@ module.exports = function extend() {
 	}
 
 	for (; i < length; ++i) {
+		options = arguments[i];
 		// Only deal with non-null/undefined values
-		if ((options = arguments[i]) != null) {
+		if (options != null) {
 			// Extend the base object
 			for (name in options) {
 				src = target[name];
