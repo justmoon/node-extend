@@ -38,7 +38,7 @@ module.exports = function extend() {
 		// skip the boolean and the target
 		i = 2;
 	} else if ((typeof target !== 'object' && typeof target !== 'function') || target == null) {
-			target = {};
+		target = {};
 	}
 
 	for (; i < length; ++i) {
