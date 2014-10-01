@@ -4,7 +4,7 @@ var undefined;
 
 var isPlainObject = function isPlainObject(obj) {
 	'use strict';
-	if (!obj || toString.call(obj) !== '[object Object]' || obj.nodeType || obj.setInterval) {
+	if (!obj || toString.call(obj) !== '[object Object]') {
 		return false;
 	}
 

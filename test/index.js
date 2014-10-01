@@ -607,3 +607,4 @@ test('pass in null; should create a valid object', function (t) {
 	t.deepEqual(target, override, 'null object handled normally');
 	t.end();
 });
+
