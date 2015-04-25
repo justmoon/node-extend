@@ -621,3 +621,16 @@ test('pass in null; should create a valid object', function (t) {
 	t.end();
 });
 
+test('works without Array.isArray', function (t) {
+	var savedIsArray = Array.isArray;
+	delete Array.isArray;
+	var target = [];
+	var o1 = [1, 2, 3];
+	t.deepEqual(
+		extend(true, target, o1),
+		[1, 2, 3],
+		'It works without Array.isArray'
+	);
+	Array.isArray = savedIsArray;
+	t.end();
+});

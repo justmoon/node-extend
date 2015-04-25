@@ -2,6 +2,15 @@ var hasOwn = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
 var undefined;
 
+// inlined from https://github.com/juliangruber/isarray
+var isArray = function (arr) {
+	if (Array.isArray) {
+		return Array.isArray.call(null, arr);
+	}
+
+  return toString.call(arr) === '[object Array]';
+};
+
 var isPlainObject = function isPlainObject(obj) {
 	'use strict';
 	if (!obj || toString.call(obj) !== '[object Object]') {
@@ -56,10 +65,10 @@ module.exports = function extend() {
 				}
 
 				// Recurse if we're merging plain objects or arrays
-				if (deep && copy && (isPlainObject(copy) || (copyIsArray = Array.isArray(copy)))) {
+				if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
 					if (copyIsArray) {
 						copyIsArray = false;
-						clone = src && Array.isArray(src) ? src : [];
+						clone = src && isArray(src) ? src : [];
 					} else {
 						clone = src && isPlainObject(src) ? src : {};
 					}
