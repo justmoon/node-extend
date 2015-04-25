@@ -1,3 +1,12 @@
+2.0.1 / 2015-04-25
+==================
+  * Use an inline `isArray` check, for ES3 browsers. (#27)
+  * Some old browsers fail when an identifier is `toString`
+  * Test latest `node` and `io.js` versions on `travis-ci`; speed up builds
+  * Add license info to package.json (#25)
+  * Update `tape`, `jscs`
+  * Adding a CHANGELOG
+
 2.0.0 / 2014-10-01
 ==================
   * Increase code coverage to 100%; run code coverage as part of tests
