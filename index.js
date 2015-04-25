@@ -2,13 +2,12 @@ var hasOwn = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
 var undefined;
 
-// inlined from https://github.com/juliangruber/isarray
-var isArray = function (arr) {
+var isArray = function isArray(arr) {
 	if (Array.isArray) {
-		return Array.isArray.call(null, arr);
+		return Array.isArray(arr);
 	}
 
-  return toString.call(arr) === '[object Array]';
+	return toString.call(arr) === '[object Array]';
 };
 
 var isPlainObject = function isPlainObject(obj) {
