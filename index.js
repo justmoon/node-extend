@@ -3,7 +3,7 @@ var toStr = Object.prototype.toString;
 var undefined;
 
 var isArray = function isArray(arr) {
-	if (Array.isArray) {
+	if (typeof Array.isArray === 'function') {
 		return Array.isArray(arr);
 	}
 

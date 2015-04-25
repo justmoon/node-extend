@@ -623,12 +623,12 @@ test('pass in null; should create a valid object', function (t) {
 
 test('works without Array.isArray', function (t) {
 	var savedIsArray = Array.isArray;
-	delete Array.isArray;
+	Array.isArray = false; // don't delete, to preserve enumerability
 	var target = [];
-	var o1 = [1, 2, 3];
+	var source = [1, [2], {3: true}];
 	t.deepEqual(
-		extend(true, target, o1),
-		[1, 2, 3],
+		extend(true, target, source),
+		[1, [2], {3: true}],
 		'It works without Array.isArray'
 	);
 	Array.isArray = savedIsArray;
