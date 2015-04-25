@@ -27,7 +27,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"tape": "^3.5.0",
+		"tape": "^4.0.0",
 		"covert": "^1.0.1",
 		"jscs": "^1.11.3"
 	},
