@@ -8,7 +8,9 @@
 		"test": "npm run lint && node test/index.js && npm run coverage-quiet",
 		"coverage": "covert test/index.js",
 		"coverage-quiet": "covert test/index.js --quiet",
-		"lint": "jscs *.js */*.js"
+		"lint": "npm run jscs && npm run eslint",
+		"jscs": "jscs *.js */*.js",
+		"eslint": "eslint *.js */*.js"
 	},
 	"contributors": [
 		{
@@ -29,7 +31,8 @@
 	"devDependencies": {
 		"tape": "^4.0.0",
 		"covert": "^1.1.0",
-		"jscs": "^1.13.1"
+		"jscs": "^1.13.1",
+		"eslint": "^0.21.2"
 	},
 	"license": "MIT"
 }
