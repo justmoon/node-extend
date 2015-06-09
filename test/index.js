@@ -624,10 +624,10 @@ test('works without Array.isArray', function (t) {
 	var savedIsArray = Array.isArray;
 	Array.isArray = false; // don't delete, to preserve enumerability
 	var target = [];
-	var source = [1, [2], {3: true}];
+	var source = [1, [2], { 3: true }];
 	t.deepEqual(
 		extend(true, target, source),
-		[1, [2], {3: true}],
+		[1, [2], { 3: true }],
 		'It works without Array.isArray'
 	);
 	Array.isArray = savedIsArray;

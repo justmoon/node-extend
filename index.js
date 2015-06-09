@@ -16,10 +16,10 @@ var isPlainObject = function isPlainObject(obj) {
 		return false;
 	}
 
-	var has_own_constructor = hasOwn.call(obj, 'constructor');
-	var has_is_prototype_of_method = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
+	var hasOwnConstructor = hasOwn.call(obj, 'constructor');
+	var hasIsPrototypeOf = obj.constructor && obj.constructor.prototype && hasOwn.call(obj.constructor.prototype, 'isPrototypeOf');
 	// Not own constructor property must be Object
-	if (obj.constructor && !has_own_constructor && !has_is_prototype_of_method) {
+	if (obj.constructor && !hasOwnConstructor && !hasIsPrototypeOf) {
 		return false;
 	}
 
