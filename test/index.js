@@ -578,7 +578,7 @@ test('deep clone', function (t) {
 			}
 		}
 	}, 'deep is unchanged after setting target property');
-	//----- NEVER USE EXTEND WITH THE ABOVE SITUATION ------------------------------
+	// ----- NEVER USE EXTEND WITH THE ABOVE SITUATION ------------------------------
 	t.end();
 });
 
