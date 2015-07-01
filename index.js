@@ -12,8 +12,6 @@ var isArray = function isArray(arr) {
 };
 
 var isPlainObject = function isPlainObject(obj) {
-	'use strict';
-
 	if (!obj || toStr.call(obj) !== '[object Object]') {
 		return false;
 	}
@@ -34,8 +32,6 @@ var isPlainObject = function isPlainObject(obj) {
 };
 
 module.exports = function extend() {
-	'use strict';
-
 	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[0],
 		i = 1,
