@@ -1,3 +1,5 @@
+'use strict';
+
 var extend = require('../index');
 var test = require('tape');
 
