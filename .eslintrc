@@ -70,7 +70,7 @@
 		"no-extra-boolean-cast": [2],
 		"no-extra-parens": [0],
 		"no-extra-semi": [2],
-		"no-extra-strict": [2],
+		"strict": [2, "global"],
 		"no-fallthrough": [2],
 		"no-floating-decimal": [2],
 		"no-func-assign": [2],
