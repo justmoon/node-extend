@@ -1,3 +1,5 @@
+'use strict';
+
 var hasOwn = Object.prototype.hasOwnProperty;
 var toStr = Object.prototype.toString;
 
