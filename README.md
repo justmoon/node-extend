@@ -61,7 +61,7 @@ Ported to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jon
 [github-justmoon]: https://github.com/justmoon
 [github-insin]: https://github.com/insin
 [github-ljharb]: https://github.com/ljharb
-[npm-version-png]: http://vb.teelaun.ch/justmoon/node-extend.svg
+[npm-version-png]: http://versionbadg.es/justmoon/node-extend.svg
 [deps-svg]: https://david-dm.org/justmoon/node-extend.svg
 [deps-url]: https://david-dm.org/justmoon/node-extend
 [dev-deps-svg]: https://david-dm.org/justmoon/node-extend/dev-status.svg
