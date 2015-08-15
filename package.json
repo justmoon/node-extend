@@ -29,7 +29,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"tape": "^4.1.0",
+		"tape": "^4.2.0",
 		"covert": "^1.1.0",
 		"jscs": "^2.1.0",
 		"eslint": "^1.1.0",
