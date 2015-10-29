@@ -31,6 +31,12 @@ var isPlainObject = function isPlainObject(obj) {
 	return typeof key === 'undefined' || hasOwn.call(obj, key);
 };
 
+var isBuffer = function isBuffer(buff) {
+	if(typeof Buffer.isBuffer === 'function') return Buffer.isBuffer(buff);
+	else if(typeof Buffer === 'function') return buff instanceof Buffer;
+	return false;
+};
+
 module.exports = function extend() {
 	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[0],
@@ -60,7 +66,9 @@ module.exports = function extend() {
 				// Prevent never-ending loop
 				if (target !== copy) {
 					// Recurse if we're merging plain objects or arrays
-					if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
+					if (deep && copy && isBuffer(copy)) {
+						target[name] = new Buffer(copy);
+					} else if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
 						if (copyIsArray) {
 							copyIsArray = false;
 							clone = src && isArray(src) ? src : [];
