@@ -32,9 +32,11 @@ var isPlainObject = function isPlainObject(obj) {
 };
 
 var isBuffer = function isBuffer(buff) {
-	if(typeof Buffer.isBuffer === 'function') return Buffer.isBuffer(buff);
-	else if(typeof Buffer === 'function') return buff instanceof Buffer;
-	return false;
+	if (typeof Buffer === 'function' && typeof Buffer.isBuffer === 'function') {
+		return Buffer.isBuffer(buff);
+	} else {
+		return false;
+	}
 };
 
 module.exports = function extend() {
