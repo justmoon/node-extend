@@ -2,6 +2,7 @@
 
 var extend = require('../index');
 var test = require('tape');
+var fs = require('fs');
 
 var str = 'me a test';
 var integer = 10;
@@ -581,6 +582,18 @@ test('deep clone', function (t) {
 		}
 	}, 'deep is unchanged after setting target property');
 	// ----- NEVER USE EXTEND WITH THE ABOVE SITUATION ------------------------------
+	t.end();
+});
+
+test('deep clone; buffers are duplicated', function (t) {
+	var buff = fs.readFileSync('./index.js');
+
+	var target = extend(true, {}, { buff: buff });
+
+	t.equal(Buffer.isBuffer(target.buff), true, 'target buffer is buffer');
+	t.equal(target.buff != buff, true, 'buffers have been cloned');
+	t.deepEqual(target.buff, buff, 'buffers contain the same data');
+
 	t.end();
 });
 
