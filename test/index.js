@@ -587,7 +587,7 @@ test('deep clone', function (t) {
 
 test('deep clone; buffers are duplicated', function (t) {
 	var buff = new Buffer(16);
-	buff.write("some string", 0, "ascii");
+	buff.write('some string', 0, 'ascii');
 
 	var target = extend(true, {}, { buff: buff });
 
