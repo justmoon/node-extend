@@ -2,7 +2,6 @@
 
 var extend = require('../index');
 var test = require('tape');
-var fs = require('fs');
 
 var str = 'me a test';
 var integer = 10;
