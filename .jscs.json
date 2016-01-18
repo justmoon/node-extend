@@ -9,13 +9,17 @@
 
 	"disallowIdentifierNames": [],
 
-	"requireCurlyBraces": ["if", "else", "for", "while", "do", "try", "catch"],
+	"requireCurlyBraces": {
+		"allExcept": [],
+		"keywords": ["if", "else", "for", "while", "do", "try", "catch"]
+	},
 
 	"requireSpaceAfterKeywords": ["if", "else", "for", "while", "do", "switch", "return", "try", "catch", "function"],
 
 	"disallowSpaceAfterKeywords": [],
 
 	"disallowSpaceBeforeComma": true,
+	"disallowSpaceAfterComma": false,
 	"disallowSpaceBeforeSemicolon": true,
 
 	"disallowNodeTypes": [
@@ -26,7 +30,7 @@
 		"WithStatement"
 	],
 
-	"requireObjectKeysOnNewLine": true,
+	"requireObjectKeysOnNewLine": { "allExcept": ["sameLine"] },
 
 	"requireSpacesInAnonymousFunctionExpression": { "beforeOpeningRoundBrace": true, "beforeOpeningCurlyBrace": true },
 	"requireSpacesInNamedFunctionExpression": { "beforeOpeningCurlyBrace": true },
@@ -75,7 +79,7 @@
 
 	"disallowMultipleLineStrings": true,
 
-	"requireDotNotation": true,
+	"requireDotNotation": { "allExcept": ["keywords"] },
 
 	"requireParenthesesAroundIIFE": true,
 
@@ -116,6 +120,35 @@
 
 	"requirePaddingNewLinesAfterUseStrict": true,
 
-	"disallowArrowFunctions": true
+	"disallowArrowFunctions": true,
+
+	"disallowMultiLineTernary": true,
+
+	"validateOrderInObjectKeys": false,
+
+	"disallowIdenticalDestructuringNames": true,
+
+	"disallowNestedTernaries": { "maxLevel": 1 },
+
+	"requireSpaceAfterComma": { "allExcept": ["trailing"] },
+	"requireAlignedMultilineParams": false,
+
+	"requireSpacesInGenerator": {
+		"afterStar": true
+	},
+
+	"disallowSpacesInGenerator": {
+		"beforeStar": true
+	},
+
+	"disallowVar": false,
+
+	"requireArrayDestructuring": false,
+
+	"requireEnhancedObjectLiterals": false,
+
+	"requireObjectDestructuring": false,
+
+	"requireEarlyReturn": false
 }
 
