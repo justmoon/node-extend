@@ -6,6 +6,18 @@
 
 `node-extend` is a port of the classic extend() method from jQuery. It behaves as you expect. It is simple, tried and true.
 
+Notes:
+
+* Since Node.js >= 4,
+  [`Object.assign`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+  now offers the same functionality natively (but without the "deep copy" option).
+  See [ECMAScript 2015 (ES6) in Node.js](https://nodejs.org/en/docs/es6).
+* Some native implementations of `Object.assign` in both Node.js and many
+  browsers (since NPM modules are for the browser too) may not be fully
+  spec-compliant.
+  Check [`object.assign`](https://www.npmjs.com/package/object.assign) module for
+  a compliant candidate.
+
 ## Installation
 
 This package is available on [npm][npm-url] as: `extend`
