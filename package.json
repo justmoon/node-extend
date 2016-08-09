@@ -30,11 +30,11 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"tape": "^4.4.0",
+		"tape": "^4.6.0",
 		"covert": "^1.1.0",
-		"jscs": "^2.8.0",
-		"eslint": "^1.10.3",
-		"@ljharb/eslint-config": "^1.6.1"
+		"jscs": "^3.0.7",
+		"eslint": "^3.2.2",
+		"@ljharb/eslint-config": "^6.0.0"
 	},
 	"license": "MIT"
 }

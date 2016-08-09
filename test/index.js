@@ -17,7 +17,7 @@ var obj = {
 	date: date,
 	constructor: 'fake',
 	isPrototypeOf: 'not a function',
-    foo: new Foo()
+	foo: new Foo()
 };
 
 var deep = {
@@ -470,11 +470,7 @@ test('deep clone', function (t) {
 		integer: 76,
 		arr: [1, 2, 3, 4],
 		date: new Date(81, 7, 26),
-		layer: {
-			deep: {
-				integer: 42
-			}
-		}
+		layer: { deep: { integer: 42 } }
 	};
 	var target = extend(true, ori, deep);
 
@@ -585,15 +581,9 @@ test('deep clone', function (t) {
 });
 
 test('deep clone; arrays are merged', function (t) {
-	var defaults = {
-		arr: [1, 2, 3]
-	};
-	var override = {
-		arr: ['x']
-	};
-	var expectedTarget = {
-		arr: ['x', 2, 3]
-	};
+	var defaults = { arr: [1, 2, 3] };
+	var override = { arr: ['x'] };
+	var expectedTarget = { arr: ['x', 2, 3] };
 
 	var target = extend(true, defaults, override);
 
@@ -602,21 +592,15 @@ test('deep clone; arrays are merged', function (t) {
 });
 
 test('deep clone === false; objects merged normally', function (t) {
-	var defaults = {
-		a: 1
-	};
-	var override = {
-		a: 2
-	};
+	var defaults = { a: 1 };
+	var override = { a: 2 };
 	var target = extend(false, defaults, override);
 	t.deepEqual(target, override, 'deep === false handled normally');
 	t.end();
 });
 
 test('pass in null; should create a valid object', function (t) {
-	var override = {
-		a: 1
-	};
+	var override = { a: 1 };
 	var target = extend(null, override);
 	t.deepEqual(target, override, 'null object handled normally');
 	t.end();
