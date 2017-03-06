@@ -3,14 +3,6 @@
 var hasOwn = Object.prototype.hasOwnProperty;
 var toStr = Object.prototype.toString;
 
-var isArray = function isArray(arr) {
-	if (typeof Array.isArray === 'function') {
-		return Array.isArray(arr);
-	}
-
-	return toStr.call(arr) === '[object Array]';
-};
-
 var isPlainObject = function isPlainObject(obj) {
 	if (!obj || toStr.call(obj) !== '[object Object]') {
 		return false;
@@ -59,8 +51,8 @@ module.exports = function extend() {
 
 				// Prevent never-ending loop
 				if (target !== copy) {
-					// Recurse if we're merging plain objects or arrays
-					if (deep && copy && (isPlainObject(copy) || (copyIsArray = isArray(copy)))) {
+					// Recurse if we're merging plain objects
+					if (deep && copy && isPlainObject(copy)) {
 						if (copyIsArray) {
 							copyIsArray = false;
 							clone = src && isArray(src) ? src : [];
