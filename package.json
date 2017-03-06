@@ -1,6 +1,6 @@
 {
   "name": "extend2",
-  "author": "Stefan Thomas <justmoon@members.fsf.org> (http://www.justmoon.net)",
+  "author": "popomore <sakura9515@gmail.com>",
   "version": "1.0.0",
   "description": "Port of jQuery.extend for node.js and the browser",
   "main": "index",
@@ -13,12 +13,6 @@
     "eslint": "eslint *.js */*.js",
     "ci": "npm run test"
   },
-  "contributors": [
-    {
-      "name": "Jordan Harband",
-      "url": "https://github.com/ljharb"
-    }
-  ],
   "keywords": [
     "extend",
     "clone",

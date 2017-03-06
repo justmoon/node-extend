@@ -45,3 +45,4 @@ Ported to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jon
 [github-justmoon]: https://github.com/justmoon
 [github-insin]: https://github.com/insin
 [github-ljharb]: https://github.com/ljharb
+[node-extend]: https://github.com/justmoon/node-extend
