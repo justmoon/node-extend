@@ -5,7 +5,9 @@
 	"description": "Port of jQuery.extend for node.js and the browser",
 	"main": "index",
 	"scripts": {
-		"test": "npm run lint && npm run tests-only && npm run coverage-quiet",
+		"pretest": "npm run lint",
+		"test": "npm run tests-only",
+		"posttest": "npm run coverage-quiet",
 		"tests-only": "node test",
 		"coverage": "covert test/index.js",
 		"coverage-quiet": "covert test/index.js --quiet",
