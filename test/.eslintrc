@@ -1,5 +1,7 @@
 {
 	"rules": {
-		"max-lines": 0
+		"array-bracket-newline": 0,
+		"array-element-newline": 0,
+		"max-lines": 0,
 	}
 }
