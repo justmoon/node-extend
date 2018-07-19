@@ -20,6 +20,17 @@
   * [Tests] Add `npm run eslint`
   * [Dev Deps] Update `covert`, `jscs`
 
+2.0.2 / 2018-07-19
+==================
+  * [Fix] Prevent merging `__proto__` property (#48)
+  * [Fix] deep extending should work with a non-object (#46)
+  * [Docs] Switch from vb.teelaun.ch to versionbadg.es for the npm version badge SVG.
+  * [Docs] Add example to readme (#34)
+  * [Dev Deps] update `tape`, `eslint`, `@ljharb/eslint-config`, `covert`, `jscs`
+  * [Tests] up to `node` `v10.7`, `v9.11`, `v8.11`, `v7.10`, `v6.14`, `v4.9`; `io.js` `v2.3`; use `nvm install-latest-npm`
+  * [Tests] Add `npm run eslint`
+  * [Tests] `int` is an ES3 reserved word
+
 2.0.1 / 2015-04-25
 ==================
   * Use an inline `isArray` check, for ES3 browsers. (#27)
