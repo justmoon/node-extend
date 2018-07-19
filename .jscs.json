@@ -170,6 +170,6 @@
 
 	"requireSpacesInsideImportedObjectBraces": true,
 
-	"requireUseStrict": true
+	"requireUseStrict": false
 }
 
