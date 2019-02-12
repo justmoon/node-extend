@@ -7,11 +7,14 @@
 	"scripts": {
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npm run coverage-quiet",
+		"posttest": "npm run coverage-quiet && npm run audit",
 		"tests-only": "node test",
 		"coverage": "covert test/index.js",
 		"coverage-quiet": "covert test/index.js --quiet",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"preaudit": "npm install --package-lock --package-lock-only",
+		"audit": "npm audit",
+		"postaudit": "rm package-lock.json"
 	},
 	"contributors": [
 		{
