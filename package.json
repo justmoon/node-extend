@@ -33,10 +33,10 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^12.2.1",
-		"covert": "^1.1.0",
+		"covert": "^1.1.1",
 		"eslint": "^4.19.1",
 		"jscs": "^3.0.7",
-		"tape": "^4.9.1"
+		"tape": "^4.10.0"
 	},
 	"license": "MIT"
 }
