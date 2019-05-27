@@ -76,7 +76,7 @@ module.exports = function extend() {
 		// skip the boolean and the target
 		i = 2;
 	}
-	if (target == null || (typeof target !== 'object' && typeof target !== 'function')) {
+	if (target === null || target === undefined || (typeof target !== 'object' && typeof target !== 'function')) {
 		target = {};
 	}
 
