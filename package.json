@@ -8,9 +8,8 @@
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npm run coverage && npx aud",
-		"tests-only": "node test",
-		"coverage": "covert test",
+		"posttest": "npx aud",
+		"tests-only": "covert test",
 		"lint": "eslint ."
 	},
 	"contributors": [
