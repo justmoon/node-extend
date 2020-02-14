@@ -1,6 +1,6 @@
 'use strict';
 
-var extend = require('../index');
+var extend = require('../');
 var test = require('tape');
 
 var str = 'me a test';

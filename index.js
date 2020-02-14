@@ -25,8 +25,7 @@ var isPlainObject = function isPlainObject(obj) {
 		return false;
 	}
 
-	// Own properties are enumerated firstly, so to speed up,
-	// if last one is own, then all properties are own.
+	// Own properties are enumerated firstly, so to speed up, if last one is own, then all properties are own.
 	var key;
 	for (key in obj) { /**/ }
 
@@ -43,6 +42,7 @@ var setProperty = function setProperty(target, options) {
 			writable: true
 		});
 	} else {
+		// eslint-disable-next-line no-param-reassign
 		target[options.name] = options.newValue;
 	}
 };
@@ -53,8 +53,7 @@ var getProperty = function getProperty(obj, name) {
 		if (!hasOwn.call(obj, name)) {
 			return void 0;
 		} else if (gOPD) {
-			// In early versions of node, obj['__proto__'] is buggy when obj has
-			// __proto__ as an own property. Object.getOwnPropertyDescriptor() works.
+			// In early versions of node, obj['__proto__'] is buggy when obj has __proto__ as an own property. Object.getOwnPropertyDescriptor() works.
 			return gOPD(obj, name).value;
 		}
 	}
