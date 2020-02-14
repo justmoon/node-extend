@@ -8,13 +8,10 @@
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npm run coverage && npm run audit",
+		"posttest": "npm run coverage && npx aud",
 		"tests-only": "node test",
 		"coverage": "covert test",
-		"lint": "eslint .",
-		"preaudit": "npm install --package-lock --package-lock-only",
-		"audit": "npm audit",
-		"postaudit": "rm package-lock.json"
+		"lint": "eslint ."
 	},
 	"contributors": [
 		{
@@ -34,6 +31,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^16.0.0",
+		"aud": "^1.0.0",
 		"covert": "^1.1.1",
 		"eslint": "^6.8.0",
 		"safe-publish-latest": "^1.1.4",
