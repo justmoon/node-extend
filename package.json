@@ -36,5 +36,9 @@
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^4.13.0"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"files": [
+		"index.js",
+		"component.json"
+	]
 }
