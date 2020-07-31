@@ -11,15 +11,15 @@
 		"max-statements": [2, 26],
 		"no-magic-numbers": [0],
 		"no-restricted-syntax": [2, "BreakStatement", "ContinueStatement", "DebuggerStatement", "LabeledStatement", "WithStatement"],
-		"sort-keys": [0],
+		"sort-keys": [0]
 	},
 
 	"overrides": [
 		{
 			"files": "test/**",
 			"rules": {
-				"max-lines-per-function": 0,
-			},
-		},
-	],
+				"max-lines-per-function": 0
+			}
+		}
+	]
 }
