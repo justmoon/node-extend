@@ -5,6 +5,11 @@
 	"description": "Port of jQuery.extend for node.js and the browser",
 	"main": "index.js",
 	"module": "index.mjs",
+	"exports": {
+		".": {
+			"require": "./index.mjs"
+		}
+	},
 	"scripts": {
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
