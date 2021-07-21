@@ -3,7 +3,7 @@
 	"author": "Stefan Thomas <justmoon@members.fsf.org> (http://www.justmoon.net)",
 	"version": "3.0.2",
 	"description": "Port of jQuery.extend for node.js and the browser",
-	"main": "index.cjs",
+	"main": "index.js",
 	"module": "index.mjs",
 	"scripts": {
 		"prepublish": "safe-publish-latest",
