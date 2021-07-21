@@ -16,7 +16,8 @@
 		"test": "npm run tests-only",
 		"posttest": "npx aud",
 		"tests-only": "covert test",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"build": "esbuild index.js --outfile=index.mjs --format=esm"
 	},
 	"contributors": [
 		{
@@ -38,6 +39,7 @@
 		"@ljharb/eslint-config": "^16.0.0",
 		"aud": "^1.0.0",
 		"covert": "^1.1.1",
+		"esbuild": "^0.12.15",
 		"eslint": "^6.8.0",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^4.13.0"
