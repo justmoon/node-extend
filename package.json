@@ -4,6 +4,7 @@
 	"version": "3.0.2",
 	"description": "Port of jQuery.extend for node.js and the browser",
 	"main": "index",
+	"module": "index.mjs",
 	"scripts": {
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run lint",
