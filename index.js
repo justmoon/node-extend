@@ -54,7 +54,7 @@ module.exports = function extend() {
       if (target === copy) continue;
 
       // Recurse if we're merging plain objects
-      if (deep && copy && isPlainObject(copy)) {
+      if (deep && copy && isPlainObject(copy) && target.constructor !== Object) {
         clone = src && isPlainObject(src) ? src : {};
         // Never move original objects, clone them
         target[name] = extend(deep, clone, copy);
