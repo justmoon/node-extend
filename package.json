@@ -5,12 +5,13 @@
 	"description": "Port of jQuery.extend for node.js and the browser",
 	"main": "index",
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublishOnly": "safe-publish-latest",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npx aud",
+		"posttest": "aud --production",
 		"tests-only": "covert test",
-		"lint": "eslint ."
+		"lint": "eslint --ext=js,mjs ."
 	},
 	"contributors": [
 		{
@@ -27,14 +28,13 @@
 		"type": "git",
 		"url": "https://github.com/justmoon/node-extend.git"
 	},
-	"dependencies": {},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^16.0.0",
-		"aud": "^1.0.0",
+		"@ljharb/eslint-config": "^20.1.0",
+		"aud": "^1.1.5",
 		"covert": "^1.1.1",
-		"eslint": "^6.8.0",
-		"safe-publish-latest": "^1.1.4",
-		"tape": "^4.13.0"
+		"eslint": "^8.6.0",
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^4.14.0"
 	},
 	"license": "MIT"
 }
