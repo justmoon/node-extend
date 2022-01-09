@@ -1,8 +1,13 @@
-[![Build Status][travis-svg]][travis-url]
+# extend() for Node.js <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
+
+[![github actions][actions-image]][actions-url]
+[![coverage][codecov-image]][codecov-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
 
-# extend() for Node.js <sup>[![Version Badge][npm-version-png]][npm-url]</sup>
+[![npm badge][npm-badge-png]][npm-url]
 
 `node-extend` is a port of the classic extend() method from jQuery. It behaves as you expect. It is simple, tried and true.
 
@@ -66,16 +71,22 @@ All credit to the jQuery authors for perfecting this amazing utility.
 
 Ported to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jonathan Buchanan][github-insin] and [Jordan Harband][github-ljharb].
 
-[travis-svg]: https://travis-ci.org/justmoon/node-extend.svg
-[travis-url]: https://travis-ci.org/justmoon/node-extend
 [npm-url]: https://npmjs.org/package/extend
-[mit-license-url]: http://opensource.org/licenses/MIT
-[github-justmoon]: https://github.com/justmoon
-[github-insin]: https://github.com/insin
-[github-ljharb]: https://github.com/ljharb
-[npm-version-png]: http://versionbadg.es/justmoon/node-extend.svg
+[npm-version-svg]: https://versionbadg.es/justmoon/node-extend.svg
 [deps-svg]: https://david-dm.org/justmoon/node-extend.svg
 [deps-url]: https://david-dm.org/justmoon/node-extend
 [dev-deps-svg]: https://david-dm.org/justmoon/node-extend/dev-status.svg
 [dev-deps-url]: https://david-dm.org/justmoon/node-extend#info=devDependencies
-
+[npm-badge-png]: https://nodei.co/npm/extend.png?downloads=true&stars=true
+[license-image]: https://img.shields.io/npm/l/extend.svg
+[license-url]: LICENSE
+[downloads-image]: https://img.shields.io/npm/dm/extend.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=extend
+[codecov-image]: https://codecov.io/gh/justmoon/node-extend/branch/main/graphs/badge.svg
+[codecov-url]: https://app.codecov.io/gh/justmoon/node-extend/
+[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/justmoon/node-extend
+[actions-url]: https://github.com/justmoon/node-extend/actions
+[github-justmoon]: https://github.com/justmoon
+[github-insin]: https://github.com/insin
+[github-ljharb]: https://github.com/ljharb
+[mit-license-url]: http://opensource.org/licenses/MIT
