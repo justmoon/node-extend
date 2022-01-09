@@ -1,7 +1,7 @@
 {
 	"name": "extend",
 	"author": "Stefan Thomas <justmoon@members.fsf.org> (http://www.justmoon.net)",
-	"version": "3.0.0",
+	"version": "3.0.2",
 	"description": "Port of jQuery.extend for node.js and the browser.",
 	"scripts": [
 		"index.js"
@@ -24,9 +24,12 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"tape" : "~3.0.0",
-		"covert": "~0.4.0",
-		"jscs": "~1.6.2"
+		"@ljharb/eslint-config": "^20.1.0",
+		"aud": "^1.1.5",
+		"eslint": "^8.6.0",
+		"nyc": "^10.3.2",
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^4.14.0"
 	}
 }
 
