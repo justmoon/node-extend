@@ -10,7 +10,7 @@
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
 		"posttest": "aud --production",
-		"tests-only": "covert test",
+		"tests-only": "nyc tape 'test/**/*.js'",
 		"lint": "eslint --ext=js,mjs ."
 	},
 	"contributors": [
@@ -31,8 +31,8 @@
 	"devDependencies": {
 		"@ljharb/eslint-config": "^20.1.0",
 		"aud": "^1.1.5",
-		"covert": "^1.1.1",
 		"eslint": "^8.6.0",
+		"nyc": "^10.3.2",
 		"safe-publish-latest": "^2.0.0",
 		"tape": "^4.14.0"
 	},
