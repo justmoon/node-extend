@@ -90,7 +90,7 @@ test('merge string with array', function (t) {
 	t.end();
 });
 
-test('merge string with date', { todo: 'investigate why this is broken' }, function (t) {
+test('merge string with date', function (t) {
 	var ori = 'what u gonna say';
 	var target = extend(ori, date);
 
@@ -157,7 +157,7 @@ test('merge number with array', function (t) {
 	t.end();
 });
 
-test('merge number with date', { todo: 'investigate why this is broken' }, function (t) {
+test('merge number with date', function (t) {
 	var target = extend(20, date);
 	var testDate = new Date(81, 4, 13);
 
@@ -183,7 +183,7 @@ test('merge number with object', function (t) {
 	t.end();
 });
 
-test('merge array with string', { todo: 'investigate why this is broken' }, function (t) {
+test('merge array with string', function (t) {
 	var ori = [1, 2, 3, 4, 5, 6];
 	var target = extend(ori, str);
 
@@ -264,7 +264,7 @@ test('merge array with object', function (t) {
 	t.end();
 });
 
-test('merge date with string', { todo: 'investigate why this is broken' }, function (t) {
+test('merge date with string', function (t) {
 	var ori = new Date(81, 9, 20);
 	var target = extend(ori, str);
 	var testObject = {
@@ -285,7 +285,7 @@ test('merge date with string', { todo: 'investigate why this is broken' }, funct
 	t.end();
 });
 
-test('merge date with number', { todo: 'investigate why this is broken' }, function (t) {
+test('merge date with number', function (t) {
 	var ori = new Date(81, 9, 20);
 	var target = extend(ori, 10);
 
@@ -294,7 +294,7 @@ test('merge date with number', { todo: 'investigate why this is broken' }, funct
 	t.end();
 });
 
-test('merge date with array', { todo: 'investigate why this is broken' }, function (t) {
+test('merge date with array', function (t) {
 	var ori = new Date(81, 9, 20);
 	var target = extend(ori, arr);
 	var testDate = new Date(81, 9, 20);
@@ -306,7 +306,7 @@ test('merge date with array', { todo: 'investigate why this is broken' }, functi
 	t.end();
 });
 
-test('merge date with date', { todo: 'investigate why this is broken' }, function (t) {
+test('merge date with date', function (t) {
 	var ori = new Date(81, 9, 20);
 	var target = extend(ori, date);
 
@@ -315,7 +315,7 @@ test('merge date with date', { todo: 'investigate why this is broken' }, functio
 	t.end();
 });
 
-test('merge date with object', { todo: 'investigate why this is broken' }, function (t) {
+test('merge date with object', function (t) {
 	var ori = new Date(81, 9, 20);
 	var target = extend(ori, obj);
 	var testDate = new Date(81, 8, 4);
