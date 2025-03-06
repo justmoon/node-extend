@@ -2,8 +2,6 @@
 
 [![github actions][actions-image]][actions-url]
 [![coverage][codecov-image]][codecov-url]
-[![dependency status][deps-svg]][deps-url]
-[![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
@@ -73,10 +71,6 @@ Ported to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jon
 
 [npm-url]: https://npmjs.org/package/extend
 [npm-version-svg]: https://versionbadg.es/justmoon/node-extend.svg
-[deps-svg]: https://david-dm.org/justmoon/node-extend.svg
-[deps-url]: https://david-dm.org/justmoon/node-extend
-[dev-deps-svg]: https://david-dm.org/justmoon/node-extend/dev-status.svg
-[dev-deps-url]: https://david-dm.org/justmoon/node-extend#info=devDependencies
 [npm-badge-png]: https://nodei.co/npm/extend.png?downloads=true&stars=true
 [license-image]: https://img.shields.io/npm/l/extend.svg
 [license-url]: LICENSE
